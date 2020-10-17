@@ -433,23 +433,24 @@
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </buton>
-        <div class="modal-content">
-          <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-          <form action="#" class="contact-form">
-            <input type="text" name="user-name" class="contact-form-input" placeholder="Имя" required minlength="2" />
-            <input
-              type="tel"
-              name="user-tel"
-              class="contact-form-input"
-              placeholder="Телефон*"
-              required
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-            />
-            <input type="email" name="user-email" class="contact-form-input" placeholder="Почта*" required />
-            <textarea name="user-message" class="contact-form-message" placeholder="Введите текст"></textarea>
-            <button type="submit" class="contact-form-btn">Отправить</button>
-          </form>
-        </div>
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <form action="#" class="modal-form">
+          <label class="modal-for-field">Имя
+            <input type="text" name="user-name" class="modal-form-input" minlength="2" />
+          </label class="modal-for-field">Телефон
+          <label class="modal-for-field">
+            <input type="tel" name="user-tel" class="modal-form-input" />
+          </label>
+          <label class="modal-for-field">Почта
+            <input type="email" name="user-email" class="modal-form-input" />
+          </label>
+          <label class="modal-for-field">Комментарий
+            <textarea name="user-message" class="modal-form-message" placeholder="Введите текст"></textarea>
+          </label>
+
+          <input type="checkbox" name="user-policy" value="accept-policy" class="modal-form-policy" />
+          <button type="submit" class="modal-form-btn">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
