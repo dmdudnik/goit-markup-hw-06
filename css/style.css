@@ -846,6 +846,7 @@ body {
   background-color: transparent;
   padding: 16px 15px;
   margin-right: 12px;
+  cursor: pointer;
 }
 
 .subscribe-form-input::placeholder {
