@@ -728,6 +728,8 @@ body {
 }
 
 .footer-contacts {
+  width: 260px;
+  height: 81px;
   padding-top: 60px;
   padding-bottom: 60px;
   margin-right: 70px;
@@ -855,6 +857,8 @@ body {
 }
 
 .subscribe-form-btn {
+  display: flex;
+  align-items: center;
   font-family: var(--mine-font);
   font-style: normal;
   font-weight: 700;
@@ -872,6 +876,16 @@ body {
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
   cursor: pointer;
+}
+
+.subscribe-icon {
+  display: inline-block;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/icon-send.svg);
+  fill: var(--mine-background);
+  margin-left: 10px;
 }
 
 /* ======== END FOOTER ======== */
